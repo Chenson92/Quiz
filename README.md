@@ -11,7 +11,7 @@ This is an application of online coding quiz with timer.
 ![The online quiz.](./assests/Screenshot.png)
 
 ## Link
-https://chenson92.github.io/Password-Generator/
+https://chenson92.github.io/Quiz/
 ## Credits
 
 N/A
