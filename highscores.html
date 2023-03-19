@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>High Scores</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container"> 
-        <h1> All Done!</h1> 
-        <h2>Your final score is <span class="count">0</span></h2>
-        <p>
-        Enter initials: <input type="text" id="initials"/>
-            <button id="submit">Submit</button>
-        </p>
+    <!--<link rel="stylesheet" href="style.css" />-->
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Initial</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody class="entries"></tbody>
+      </table>
     </div>
-    <script src="./assests/script.js"></script>
-</body>
+    <!--<script src="./assests/script.js"></script>-->
+    <script>
+      var previousEntries = localStorage.getItem("quiz");
+      // check if exists after loading from localStorage
+      if (previousEntries) {
+        previousEntries = JSON.parse(previousEntries);
+      } else {
+        previousEntries = [];
+      }
+
+      // Sort array
+      previousEntries = previousEntries.sort().reverse();
+
+      previousEntries.forEach((entry) => {
+        // for loop equivalent
+        console.log(entry);
+        // Template literals let you combine variables into the string
+        // Easier to write then writing, like "<b>" + "Hello" + "</b>"
+        document.querySelector(".entries").innerHTML += `<tr>
+          <td class="initial">${entry.initial}</td>
+          <td class="score">${entry.score}</td>
+        </tr>`;
+      });
+    </script>
+  </body>
 </html>

@@ -1,84 +1,82 @@
 :root {
-    background-color: white;
-    font-size: 62%;
+  background-color: white;
+  font-size: 62%;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 0;
-    color:black;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0;
+  color: black;
 }
 
-
 h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    color: blueviolet;
+  font-size: 5rem;
+  font-weight: bold;
+  color: blueviolet;
 }
 
 h2 {
-    padding: 4rem;
-    text-align: center;
-    margin: 0;
-    font-size: 4rem;
-  }
+  padding: 4rem;
+  text-align: center;
+  margin: 0;
+  font-size: 4rem;
+}
 
 h3 {
-    font-size: 2.8rem;
-    font-weight: bold;
+  font-size: 2.8rem;
+  font-weight: bold;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn {
-    font-size: 2rem;
-    padding: 2rem 0;
-    width: 20rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    color:  blueviolet;
-  }
+  font-size: 2rem;
+  padding: 2rem 0;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: blueviolet;
+}
 
-  .quiz-container{
-    background-color: #fff;
-    width: 600px;
-    overflow: hidden;
-  }
-  .quiz-header{
-    padding: 4rem;
-  }
- 
-  ul{
-    list-style-type: none;
-    padding: 0;
-  }
-  ul li{
-    font-size: 1.2rem;
-    margin: 1rem 0;
-  }
-  ul li label{
-    cursor: pointer;
-    font-size: 3rem;
-  }
-  button{
-    background-color: blueviolet;
-    color: #fff;
-    border: none;
-    width: 50%;
-    margin-left: 20%;
-    cursor: pointer;
-    font-size: 2rem;
-    padding: 1.3rem;
-    
-  }
-  button:hover{
-    background-color: plum;
-  }
+.quiz-container {
+  background-color: #fff;
+  width: 600px;
+  overflow: hidden;
+}
+.quiz-header {
+  padding: 4rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+ul li label {
+  cursor: pointer;
+  font-size: 3rem;
+}
+button {
+  background-color: blueviolet;
+  color: #fff;
+  border: none;
+  width: 50%;
+  margin-left: 20%;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1.3rem;
+}
+button:hover {
+  background-color: plum;
+}
